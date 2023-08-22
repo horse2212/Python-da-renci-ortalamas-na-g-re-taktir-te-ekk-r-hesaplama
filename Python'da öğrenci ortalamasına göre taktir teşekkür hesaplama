@@ -1,0 +1,28 @@
+a=int(input("Lütfen Ders Sayısını Giriniz: "))
+if a<=0:
+    print("Lütfen geçerli bir ders sayısı giriniz")
+
+y=list()
+x=1
+while (x<a+1):
+    b=str(input("Ders Adını Giriniz: "))
+    c=float(input("Dersin Ortlamasını Giriniz: "))
+    y.append(c)
+    w=sum(y)
+    x+=1
+
+z=(w)/a
+print("Genel Ortalamanız: {}".format(z))   
+
+
+    
+if z>=85:
+    print("Taktir Belgesi Almaya Hak Kazandınız Tebrik Ederiz.")
+elif 70<z<=84.99:
+    print("Teşekkür Belgesi Almaya Hak Kazandınız Tebrik Ederiz.")
+elif 50<z<=69.99:
+    print("Belge Almaya Hak Kazanamadınız.")
+elif z==50:
+    print("Belge Almaya Hak Kazanamadınız.")
+elif z<=49.99:
+    print("Sınıfta Kaldınız.")
